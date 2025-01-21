@@ -733,9 +733,16 @@ main {
 
 .project-card .card-title {
   margin-bottom: 10px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  width: max-content;
+  box-shadow: var(--shadow-1);
+  transform: translateY(20px);
+  opacity: 1;
+  transition: var(--transition-1);
 }
 
-.project-card :is(.card-title, .publish-date) {
+/* .project-card :is(.card-title, .publish-date) {
   background: var(--bg-primary);
   padding: 6px 12px;
   width: max-content;
@@ -743,7 +750,7 @@ main {
   transform: translateY(20px);
   opacity: 0;
   transition: var(--transition-1);
-}
+} */
 
 .project-card .publish-date {
   font-size: var(--fs-6);
@@ -751,10 +758,10 @@ main {
   transition-delay: 0s;
 }
 
-.project-card:is(:hover, :focus) :is(.card-title, .publish-date) {
+/* .project-card:is(:hover, :focus) :is(.card-title, .publish-date) {
   transform: translateY(0);
   opacity: 1;
-}
+} */
 
 .project-card:is(:hover, :focus) .publish-date {
   transition-delay: 0.1s;
