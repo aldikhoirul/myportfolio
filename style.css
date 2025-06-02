@@ -1387,3 +1387,22 @@ textarea.input-field {
     max-width: 450px;
   }
 }
+
+/* Responsive styling untuk layar kecil */
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .btn:last-child {
+    margin-bottom: 0;
+  }
+}
